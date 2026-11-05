@@ -1,0 +1,21 @@
+{
+  "name": "base-demo-other-host",
+  "description": "Demo project: A node on another host. Its project (project.json), its Splectral component (splectral/base-demo-other-host), and its click and run (run.sh).",
+  "private": true,
+  "license": "MIT",
+  "pkgm": {
+    "package": "demo-other-host",
+    "requires": [
+      "splectral"
+    ],
+    "folders": [
+      "splectral/base-demo-other-host"
+    ],
+    "hash": "d9563ace089597fa76a3513e7af14d7c1c6bc9ca60800d19ff060fbe188e3f1f",
+    "root": [
+      "project.json",
+      "README.md",
+      "run.sh"
+    ]
+  }
+}
