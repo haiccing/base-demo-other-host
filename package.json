@@ -1,20 +1,60 @@
 {
   "name": "base-demo-other-host",
-  "description": "Demo project: A node on another host. Its project (project.json) and its Splectral component (splectral/base-demo-other-host).",
+  "description": "A demo: a node on another host. Host A runs the swarm hosts (master, node-1) in containers; host B's node manager joins a node from an invitation. Its Splectral server and the other-host scenario. On Bare.",
   "private": true,
   "license": "MIT",
   "pkgm": {
     "package": "demo-other-host",
-    "requires": [
-      "splectral"
+    "modules": {
+      "ours": [
+        "pear-full-square/mycelium-git",
+        "pear-full-square/mycelium-layer",
+        "pear-full-square/mycelium-topic",
+        "pear-full-square/mycelium-uri",
+        "pear-full-square/mycelium-xpath",
+        "pear-full-square/p2p-channel",
+        "pear-full-square/p2p-connect",
+        "pear-full-square/p2p-dht",
+        "pear-full-square/p2p-mrepo",
+        "pear-full-square/p2p-node",
+        "pear-full-square/p2p-node-manager",
+        "pear-full-square/p2p-replicate",
+        "pear-full-square/p2p-rns",
+        "pear-full-square/p2p-store",
+        "pear-full-square/splectral-contract",
+        "pear-full-square/splectral-model",
+        "pear-full-square/splectral-p2p-actions",
+        "pear-full-square/splectral-p2p-observer",
+        "pear-full-square/splectral-p2p-watchers",
+        "pear-full-square/splectral-replay",
+        "pear-full-square/splectral-scenario",
+        "pear-full-square/splectral-server",
+        "pear-full-square/splectral-shell",
+        "pear-full-square/splectral-timeline",
+        "pear-full-square/splectral-transport",
+        "splectral/base-demo-other-host",
+        "splectral/base-view-map"
+      ],
+      "third": 219
+    },
+    "swarms": [
+      "hosts"
     ],
-    "folders": [
-      "splectral/base-demo-other-host"
+    "tests": [
+      "modules-load",
+      "other-host",
+      "sets"
     ],
-    "hash": "c81adc23815c781e558e42207ec6027a0462c4c09a8cce7d8d53d124c8f924f8",
-    "root": [
-      "project.json",
-      "README.md"
-    ]
+    "sets": [
+      "full",
+      "validation"
+    ],
+    "platform": false,
+    "unresolved": [
+      "pear-full-square/p2p-mrepo: from-native",
+      "pear-full-square/p2p-mrepo: from-bundle",
+      "pear-full-square/p2p-mrepo: a"
+    ],
+    "hash": "3a4c58fc6b74720574906253a37c34e9ee812625094e0a0e69d9962bb61ff088"
   }
 }
